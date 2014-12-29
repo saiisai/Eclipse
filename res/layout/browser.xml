@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:text="@string/home_page"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/web_tools_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tools_back"
+        >
+        <Button 
+            android:id="@+id/pre_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pre_button"
+            />
+        <Button 
+            android:id="@+id/next_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/pre_button"
+            android:layout_centerVertical="true"
+            android:background="@drawable/next_button"
+            />
+        <Button 
+            android:id="@+id/tools_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tools_button"
+            />
+        <Button 
+            android:id="@+id/window_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/home_button"
+            android:background="@drawable/window_button"
+            />
+        <Button 
+            android:id="@+id/home_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home_button"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

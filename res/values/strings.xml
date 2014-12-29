@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">NEOFARMER</string>
+	<string name="home_page">http://www.neofarmer.cn/erp/login.php</string>
+    <string name="action_settings">设置</string>
+    <string name="tools">工具</string>
+    <string name="refresh">刷新</string>
+
+	
+
+
+</resources>
